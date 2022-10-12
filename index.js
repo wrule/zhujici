@@ -1,4 +1,4 @@
 const ethers = require('ethers');
-let mnemonic = "YOUR MNEMONIC";
-let mnemonicWallet = ethers.Wallet.fromMnemonic(mnemonic);
-console.log(mnemonicWallet.privateKey);
+let wallet = new ethers.Wallet.createRandom();
+console.log(wallet.privateKey);
+console.log(wallet.mnemonic);
